@@ -5,7 +5,7 @@ Version:	0.9.0pre1
 Release:	1
 License:	GPL
 Group:		Applications
-Source0:	http://dl.sourceforge.net/emovix/%{name}-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/movix/%{name}-%{version}.tar.gz
 # Source0-md5:	ce10d147c45e7b0faee20ec77e335423
 URL:		http://movix.sourceforge.net
 BuildRequires:	autoconf
