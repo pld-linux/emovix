@@ -7,7 +7,7 @@ License:	GPL
 Group:		Applications
 Source0:	http://dl.sourceforge.net/movix/%{name}-%{version}.tar.gz
 # Source0-md5:	ce10d147c45e7b0faee20ec77e335423
-URL:		http://movix.sourceforge.net
+URL:		http://movix.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -19,16 +19,15 @@ automagically play all of its own files. eMoviX CDs can now be written
 with K3b (Linux), MoviXMaker (Linux) & MoviXISOCreator (Windows).
 
 %description -l pl
-Mikrodystrybucja która umieszczona na CD razem z dowolnymi plikami
+Mikrodystrybucja, która umieszczona na CD razem z dowolnymi plikami
 audio/wideo bêdzie w stanie wystartowaæ komputer i automagicznie
-odtworzyæ wszystkie te pliki. P³ytki z eMoviX-em mog± byæ nagrane przy
+odtworzyæ wszystkie te pliki. P³ytki z eMoviksem mog± byæ nagrane przy
 pomocy K3b (Linux), MoviXMaker (Linux) i MoviXISOCreator (Windows).
 
 %prep
 %setup -q
 
 %build
-rm -f missing
 %{__aclocal}
 %{__autoconf}
 %{__automake}
