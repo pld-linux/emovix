@@ -5,8 +5,8 @@ Version:	0.9.0pre1
 Release:	1
 License:	GPL
 Group:		Applications
-Source0:	http://dl.sourceforge.net/movix/%{name}-%{version}.tar.gz
-# Source0-md5:	b0cf8ba50d1b1dc5680fcea3c892b71e
+Source0:	http://dl.sourceforge.net/emovix/%{name}-%{version}.tar.gz
+# Source0-md5:	ce10d147c45e7b0faee20ec77e335423
 URL:		http://movix.sourceforge.net
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -20,26 +20,32 @@ with K3b (Linux), MoviXMaker (Linux) & MoviXISOCreator (Windows).
 
 %description -l pl
 Mikrodystrybucja która umieszczona na CD razem z dowolnymi plikami
-audio/wideo bêdzie w stanie wystartowac komputer i automagicznie
+audio/wideo bêdzie w stanie wystartowaæ komputer i automagicznie
 odtworzyæ wszystkie te pliki. P³ytki z eMoviX-em mog± byæ nagrane przy
 pomocy K3b (Linux), MoviXMaker (Linux) i MoviXISOCreator (Windows).
 
 %prep
-%setup -q -n %{name}-%{version}
+%setup -q
 
 %build
+rm -f missing
+%{__aclocal}
+%{__autoconf}
+%{__automake}
 %configure
 %{__make}
+
+%install
+rm -rf $RPM_BUILD_ROOT
+
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%install
-rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
-
 %files
 %defattr(644,root,root,755)
-%{_datadir}/%{name}
+%doc AUTHORS ChangeLog README* TODO
 %attr(755,root,root) %{_bindir}/*
+%{_datadir}/%{name}
