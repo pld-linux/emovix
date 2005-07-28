@@ -1,12 +1,12 @@
 Summary:	Tiny CD distro
 Summary(pl):	Ma³a dystrybucja na CD
 Name:		emovix
-Version:	0.9.0rc1
+Version:	0.9.0
 Release:	1
 License:	GPL
 Group:		Applications
 Source0:	http://dl.sourceforge.net/movix/%{name}-%{version}.tar.gz
-# Source0-md5:	77d249cba6be9de54f80bd17e360102c
+# Source0-md5:	a96492f338824b24c5a9e714c57eddcf
 URL:		http://movix.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
