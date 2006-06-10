@@ -3,6 +3,7 @@ Summary(pl):	Ma³a dystrybucja na CD
 Name:		emovix
 Version:	0.9.0
 Release:	1
+Epoch:          1
 License:	GPL
 Group:		Applications
 Source0:	http://dl.sourceforge.net/movix/%{name}-%{version}.tar.gz
