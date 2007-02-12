@@ -1,5 +1,5 @@
 Summary:	Tiny CD distro
-Summary(pl):	Ma³a dystrybucja na CD
+Summary(pl.UTF-8):   MaÅ‚a dystrybucja na CD
 Name:		emovix
 Version:	0.9.0
 Release:	1
@@ -19,10 +19,10 @@ video/audio files you want, so that the CD will be able to boot and
 automagically play all of its own files. eMoviX CDs can now be written
 with K3b (Linux), MoviXMaker (Linux) & MoviXISOCreator (Windows).
 
-%description -l pl
-Mikrodystrybucja, która umieszczona na CD razem z dowolnymi plikami
-audio/wideo bêdzie w stanie wystartowaæ komputer i automagicznie
-odtworzyæ wszystkie te pliki. P³ytki z eMoviksem mog± byæ nagrane przy
+%description -l pl.UTF-8
+Mikrodystrybucja, ktÃ³ra umieszczona na CD razem z dowolnymi plikami
+audio/wideo bÄ™dzie w stanie wystartowaÄ‡ komputer i automagicznie
+odtworzyÄ‡ wszystkie te pliki. PÅ‚ytki z eMoviksem mogÄ… byÄ‡ nagrane przy
 pomocy K3b (Linux), MoviXMaker (Linux) i MoviXISOCreator (Windows).
 
 %prep
