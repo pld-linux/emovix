@@ -1,5 +1,5 @@
 Summary:	Tiny CD distro
-Summary(pl.UTF-8):   Mała dystrybucja na CD
+Summary(pl.UTF-8):	Mała dystrybucja na CD
 Name:		emovix
 Version:	0.9.0
 Release:	1
